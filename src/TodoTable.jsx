@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 
 import Tablebody from "./component/Tbody";
-import { UsersContext } from "./UsersContex";
+/* import { UsersContext } from "./UsersContex"; */
 
 const FetchData = () => {
   const [data, setData] = useState([]);
@@ -60,50 +60,50 @@ const FetchData = () => {
   };
 
   return (
-    <UsersContext.Provider
+    /*  <UsersContext.Provider
       value={{ data, setData, email, setEmail, name, setName }}
-    >
-      <div className="container">
-        <h1>Todo List App</h1>
-        <div className="form-div">
-          <form onSubmit={handleSubmit}>
-            <input
-              type="name"
-              placeholder="Enter Name"
-              onChange={(e) => setName(e.target.value)}
-            />
-            <input
-              type="email"
-              placeholder="Enter Email"
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <span className="fromInput">
-              <button className="formAddButton" type="submit" onClick={add}>
-                Add
-              </button>
-              <button type="submit" onClick={prio}>
-                Priority
-              </button>
-            </span>
-          </form>
-        </div>
-        <table>
-          <thead>
-            <tr>
-              <th>Id</th>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.map((user) => (
-              <Tablebody key={user.id} user={user} />
-            ))}
-          </tbody>
-        </table>
+    > */
+    <div className="container">
+      <h1>Todo List App</h1>
+      <div className="form-div">
+        <form onSubmit={handleSubmit}>
+          <input
+            type="name"
+            placeholder="Enter Name"
+            onChange={(e) => setName(e.target.value)}
+          />
+          <input
+            type="email"
+            placeholder="Enter Email"
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <span className="fromInput">
+            <button className="formAddButton" type="submit" onClick={add}>
+              Add
+            </button>
+            <button type="submit" onClick={prio}>
+              Priority
+            </button>
+          </span>
+        </form>
       </div>
-    </UsersContext.Provider>
+      <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((user) => (
+            <Tablebody key={user.id} user={user} />
+          ))}
+        </tbody>
+      </table>
+    </div>
+    /* </UsersContext.Provider> */
   );
 };
 
