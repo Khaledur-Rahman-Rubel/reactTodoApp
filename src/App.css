@@ -3,7 +3,7 @@
 }
 .container h1 {
   text-align: center;
-  color: rgb(6, 70, 90);
+  color: rgb(6, 70, 90); /* for Todo List App */
   font-size: 250%;
 }
 table {
@@ -14,7 +14,7 @@ table {
 }
 table tr {
   border-bottom: 1px solid black;
-  background-color: rgb(5, 98, 126);
+  background-color: rgb(5, 98, 126); /* every table row */
   color: white;
   font-size: 20px;
 }
@@ -29,14 +29,14 @@ table tr td {
 
 .form-div form input {
   width: 38.7%;
-  padding: 8px 0px;
+  padding: 8px 0px; /* for enter name and email */
   font-size: 20px;
 }
 .form-div form button {
   width: 10%;
   padding: 0.5% 0px;
   cursor: pointer;
-  background-color: rgb(0, 100, 128);
+  background-color: rgb(0, 100, 128); /* add and priority button */
   color: white;
   border: none;
   margin-left: 1%;
@@ -47,14 +47,14 @@ table tr td {
   margin-bottom: 1%;
 }
 .icon {
-  margin-left: 3%;
+  margin-left: 3%; /* heart yellow icon */
   color: yellow;
 }
 .deletEditButton button {
   font-size: 18px;
 }
 .prioTrue td {
-  color: greenyellow;
+  color: greenyellow; /* for priority name email and id */
 }
 
 @media only screen and (max-width: 1270px) {
